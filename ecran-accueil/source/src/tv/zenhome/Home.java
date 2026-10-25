@@ -905,10 +905,12 @@ public class Home extends Activity {
             return true;
         }
         // touche Source / TV : sur certaines TV, seul l'accueil d'origine la gerait
+        /*
         if ((code == KeyEvent.KEYCODE_TV_INPUT || code == KeyEvent.KEYCODE_TV) && overlays.isEmpty() && moveIndex < 0) {
             openInputs();
             return true;
         }
+        */
         if (code == KeyEvent.KEYCODE_MENU) {
             if (!overlays.isEmpty()) return true;
             View f = getCurrentFocus();
